@@ -1,1 +1,259 @@
-hello
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+    <title>
+        <h1>POKEMON INDEX</h1>
+    </title>
+    </head>
+    <body>
+        <center>
+            <hr>
+            <h1>POKEDEX</h1>
+            <hr><br>
+        <form>
+            <label for = "natdex">National Dex:</label><input 
+            type="number" 
+            name = "natdex" 
+            id = "natdex" 
+            min = "1">
+            <br><br>
+            Choose Generation:<br>
+            <input type = "radio" name ="Generation" id = "Gen1">
+            <label for = "Gen1">Generation 1</label>
+            <input type = "radio" name = "Generation" id = "Gen2">
+            <label for = "Gen2">Generation 2</label>
+            <input type = "radio" name = "Generation" id = "Gen3">
+            <label for = "Gen3">Generation 3</label>
+            <input type = "radio" name = "Generation" id = "Gen4">
+            <label for = "Gen4">Generation 4</label>
+            <input type = "radio" name = "Generation" id = "Gen5">
+            <label for = "Gen5">Generation 5</label>
+            <input type = "radio" name = "Generation" id = "Gen6">
+            <label for = "Gen6">Generation 6</label>
+            <input type = "radio" name = "Generation" id = "Gen7">
+            <label for = "Gen7">Generation 7</label>
+            <input type = "radio" name = "Generation" id = "Gen8">
+            <label for = "Gen8">Generation 8</label>
+            <input type = "radio" name = "Generation" id = "Gen9">
+            <label for = "Gen9">Generation 9</label><br><br>
+            <label for = "pokemon name">Pokemon Name:</label><input 
+            type="text" 
+            name = "pokemon name" 
+            id = "pokemon name">
+            <br><br>
+            <label for = "image">Image:</label>
+            <input type = "file" id = image name = image><br><br>
+            <label for = "type1">Type 1:</label><input list = "types1" 
+            id = "type1" 
+            name = "type1">
+            <datalist id ="types1">
+                <option value = "Normal"></option>
+                <option value = "Fire"></option>
+                <option value = "Water"></option>
+                <option value = "Electric"></option>
+                <option value = "Ice"></option>
+                <option value = "Grass"></option>
+                <option value = "Poison"></option>
+                <option value = "Bug"></option>
+                <option value = "Flying"></option>
+                <option value = "Dark"></option>
+                <option value = "Ghost"></option>
+                <option value = "Rock"></option>
+                <option value = "Ground"></option>
+            </datalist>
+            <label for = "type2">Type 2:</label>
+            <input list = "types2" 
+            id = "type2" 
+            name = "type2">
+            <datalist id ="types2">
+                <option value = "Normal"></option>
+                <option value = "Fire"></option>
+                <option value = "Water"></option>
+                <option value = "Electric"></option>
+                <option value = "Ice"></option>
+                <option value = "Grass"></option>
+                <option value = "Poison"></option>
+                <option value = "Bug"></option>
+                <option value = "Flying"></option>
+                <option value = "Dark"></option>
+                <option value = "Ghost"></option>
+                <option value = "Rock"></option>
+                <option value = "Ground"></option>
+            </datalist><br><br>
+            <label for = "evfrom">Evolves from:</label><input 
+            type= "text" 
+            name = "evfrom" 
+            id = "evfrom">
+            <label for = "evto">Evolves to:</label><input 
+            type= "text" 
+            name = "evto" 
+            id = "evto"><br><br>
+            <label for = "nickname">Nickname:</label><input 
+            type= "text" 
+            name = "nickname" 
+            id = "nickname"><br><br>
+            <label for = "bday">Birthday:</label><input 
+            type= "date" 
+            name = "bday" 
+            id = "bday"><br><br>
+            <input type = "submit" id = "submit" name = "submit"><br><br>
+        </form>
+
+        <table border = "1px">
+            <tr align ="center"><b>
+                <th>National Dex</th>
+                <th>Generation</th>
+                <th>Pokemon Name</th>
+                <th>Image</th>
+                <th>Type 1</th>
+                <th>Type 2</th>
+                <th>Evolves From</th>
+                <th>Evolves To</th>
+                <th>Nickname</th>
+                <th>Birthday</th></b>
+                </tr>
+            <tr align ="center">
+                <td>#0822</td>
+                <td>Generation 4</td>
+                <td>Guinevere</td>
+                <td><img src = https://github.com/G10dero/it0043tc05/blob/main/1x1%20Gwen-1.png?raw=true 
+                    width = "100" alt = "Guinevere"></td>
+                <td bgcolor = "LightSkyBlue"><font color = "white">Flying</font></td>
+                <td bgcolor = "MediumOrchid"><font color = "white">Poison</font></td>
+                <td>Diglett</td>
+                <td>Mewtwo</td>
+                <td>Gwen</td>
+                <td>08/22/2004</td>
+            </tr>
+            <tr align ="center">
+                <td>#0004</td>
+                <td>Generation 1</td>
+                <td>Charmander</td>
+                <td>
+                    <img src = https://archives.bulbagarden.net/media/upload/thumb/2/27/0004Charmander.png/250px-0004Charmander.png
+                    width = "100" alt = "Charmander">
+                </td>
+
+                <td bgcolor = "red" colspan="2"><font color = "white">Fire</font></td>
+                <td>-----</td>
+                <td>Chameleon</td>
+                <td>Char</td>
+                <td>02/22/1992</td>
+            </tr>
+            <tr align ="center">
+                <td>#0007</td>
+                <td>Generation 1</td>
+                <td>Squirtle</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/5/54/0007Squirtle.png/375px-0007Squirtle.png 
+                    width = "100" alt = "Squirtle"></td>
+                <td bgcolor = "Blue" colspan="2"><font color = "white">Water</font></td>
+                <td>-----</td>
+                <td>Wartortle</td>
+                <td>Squirt</td>
+                <td>01/02/2002</td>
+            </tr>
+            <tr align ="center">
+                <td>#0050</td>
+                <td>Generation 1</td>
+                <td>Diglett</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/a/a6/0050Diglett.png/375px-0050Diglett.png 
+                    width = "100" alt = "Diglett"></td>
+                <td bgcolor = "SaddleBrown" colspan="2"><font color = "white">Ground</font></td>
+                <td>-----</td>
+                <td>Dugtrio</td>
+                <td>Diggle Diggle</td>
+                <td>01/11/1911</td>
+            </tr>
+            <tr align ="center">
+                <td>#0025</td>
+                <td>Generation 1</td>
+                <td>Pikachu</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/4/4a/0025Pikachu.png/375px-0025Pikachu.png 
+                    width = "100" alt = "Pikachu"></td>
+                <td bgcolor = "Orange" colspan="2"><font color = "white">Electric</font></td>
+                <td>-----</td>
+                <td>Raichu</td>
+                <td>whosdatpokemon</td>
+                <td>02/14/2024</td>
+            </tr>
+            <tr align ="center">
+                <td>#0010</td>
+                <td>Generation 1</td>
+                <td>Caterpie</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/5/5e/0010Caterpie.png/375px-0010Caterpie.png 
+                    width = "100" alt = "Caterpie"></td>
+                <td bgcolor = "YellowGreen" colspan="2"><font color = "White">Bug</font></td>
+                <td>-----</td>
+                <td>Metapod</td>
+                <td>Uod</td>
+                <td>10/17/1882</td>
+            </tr>
+            <tr align ="center">
+                <td>#0003</td>
+                <td>Generation 1</td>
+                <td>Venusaur</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/6/6b/0003Venusaur.png/250px-0003Venusaur.png
+                     width = "100" alt = "Venusaur"></td>
+                <td bgcolor = "Green"><font color = "white">Grass</font></td>
+                <td bgcolor = "MediumOrchid"><font color = "white">Poison</font></td>
+                <td>Ivysaur</td>
+                <td>-----</td>
+                <td>Gwen</td>
+                <td>03/04/1923</td>
+            </tr>
+            <tr align ="center">
+                <td>#0002</td>
+                <td>Generation 1</td>
+                <td>Pidgey</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/0/0c/0016Pidgey.png/250px-0016Pidgey.png 
+                    width = "100" alt = "Pidgey"></td>
+                <td bgcolor = "Gray"><font color = "white">Normal</font></td>
+                <td bgcolor = "LightSkyBlue"><font color = "white">Flying</font></td>
+                <td>Pikachu</td>
+                <td>Bulbasaur</td>
+                <td>Pidget</td>
+                <td>12/09/2021</td>
+            </tr>
+            <tr align ="center">
+                <td>#0094</td>
+                <td>Generation 1</td>
+                <td>Gengar</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/4/47/0094Gengar.png/375px-0094Gengar.png
+                    width = "100" alt = "Gengar"></td>
+                <td bgcolor = "RebeccaPurple"><font color = "white">Ghost</font></td>
+                <td bgcolor = "MediumOrchid"><font color = "white">Poison</font></td>
+                <td>-----</td>
+                <td>Steelix</td>
+                <td>Mario</td>
+                <td>05/25/2005</td>
+            </tr>   
+            <tr align ="center">
+                <td>#0095</td>
+                <td>Generation 1</td>
+                <td>Onix</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/b/b7/0095Onix.png/375px-0095Onix.png
+                    width = "100" alt = "Onix"></td>
+                <td bgcolor = "Silver"><font color = "white">Rock</font></td>
+                <td bgcolor = "SaddleBrown"><font color = "white">Ground</font></td>
+                <td>-----</td>
+                <td>Steelix</td>
+                <td>Mario</td>
+                <td>09/13/2004</td>
+            </tr>
+            <tr align ="center">
+                <td>#0229</td>
+                <td>Generation 2</td>
+                <td>Houndoom</td>
+                <td><img src = https://archives.bulbagarden.net/media/upload/thumb/0/05/0229Houndoom.png/375px-0229Houndoom.png
+                    width = "100" alt = "Houndoom"></td>
+                <td bgcolor = "DarkSlateGray"><font color = "white">Dark</font></td>
+                <td bgcolor = "Red"><font color = "white">Fire</font></td>
+                <td>Houndour</td>
+                <td>Mega Houndoom</td>
+                <td>Doberman</td>
+                <td>04/20/1982</td>
+            </tr>
+        </table>
+    </center>
+</body>
+</html>
