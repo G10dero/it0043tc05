@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jaro';
+}
+
+body {
+    background-color: black;
+}
+
+.text {
+    display: none;
+}
+
+
+.ball {
+    display: none;
+}
+
+.type {
+    color: white;
+    width: 60%;
+    display: none;
+    font-size: 5vw;
+    border: 2px;
+    border-radius: 10px;
+    padding: 3px;
+    margin: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-image: url(pokeball.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.box {
+    border-radius: 2rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    object-fit: cover;
+    width: 60%;
+    margin: 2px auto;
+}
+
+
+@media (max-width: 1110px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .box {
+        flex-direction: row;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    img {
+        width: 200px;
+        text-align: left;
+    }
+
+    .text {
+        display: flex;
+        font-size: 6vw;
+        justify-self: center;
+    }
+
+    .ball {
+        display: flex;
+        width: 200px;
+    }
+
+}
+
+.box:hover {
+    background-image: url(hover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+
+    .box {
+        width: 30rem;
+        height: 40rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        flex-shrink: 0;
+        transition: background-image 0.3s ease;
+    }
+
+    img {
+        object-position: top;
+        width: 70%;
+        margin: 2px auto;
+    }
+
+
+    .type {
+        display: flex;
+    }
+
+    .ball {
+        display: none;
+    }
+
+
+
+}
+
+
+
+#Normal {
+    background-color: #A8A878;
+}
+
+#Fire {
+    background-color: red;
+}
+
+#Water {
+    background-color: blue;
+}
+
+#Electric {
+    background-color: #fed223;
+}
+
+#Grass {
+    background-color: green;
+}
+
+
+#Fighting {
+    background-color: #C03028;
+}
+
+#Poison {
+    background-color: #A040A0;
+}
+
+
+#Flying {
+    background-color: #ac94f4;
+}
+
+
+#Bug {
+    background-color: #a1b021;
+}
+
+#Dragon {
+    background-color: #743cf7;
+}
+
+
+
+#box1 {
+    background-color: rgb(49, 190, 79);
+
+}
+
+#box2 {
+    background-color: rgb(255, 0, 234);
+}
+
+#box3 {
+    background-color: rgb(226, 108, 29);
+}
+
+#box4 {
+    background-color: rgb(24, 183, 231);
+}
+
+#box5 {
+    background-color: rgba(231, 166, 44, 0.815);
+}
+
+#box6 {
+    background-color: rgb(247, 208, 137);
+}
+
+#box7 {
+    background-color: rgb(252, 252, 235);
+}
+
+#box8 {
+    background-color: rgb(201, 137, 41);
+}
+
+#box9 {
+    background-color: yellow;
+}
+
+#box10 {
+    background-color: rgb(255, 202, 29);
+}
+
+#box11 {
+    background-color: rgb(195, 0, 255);
+}
+
+#box12 {
+    background-color: rgb(9, 89, 209);
+}
