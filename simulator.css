@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffc4eb;
+}
+
+.container {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90vw;
+    height: 100vh;
+    display: grid;  
+    border: 2px solid black;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.simulator {
+    grid-column: 1/2;
+    font-size: 0.8rem;
+    text-align: center;
+    width: 50vw;
+    height: 70vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.simulator button {
+    height: 50px;
+    background-color: #76f9b5;
+    border-radius: 1rem;
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.reset-all{
+    display: flex;
+    button{
+    width: 100%;
+    }
+}
+
+
+.gap{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    button{
+        width: 200px;
+    }
+    input {
+        text-align: center;
+        font-size: large;
+        border: 0;
+    }
+}
+
+.flex-direction{
+    display: flex;
+    gap: 10px;
+    button{
+        width: 100%;
+    }
+}
+
+.justify-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    button{
+        width: 200px;
+    }
+}
+
+.jusbuttons{
+    flex-direction: row;
+}
+
+.align-items{
+    display: flex;
+    gap: 10px;
+    button{
+        width: 100%;
+    }
+}
+
+.flex-grow{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+    display: flex;
+    button{
+        width: 40%;
+    }
+}
+
+.boxes{
+    display: flex;
+    gap: 10px;
+    button{
+        width: 100px;
+        height: 50px;
+    }
+    input{
+        font-size: large;
+        text-align: center;
+        width: 100px;
+    }
+}
+
+#demo {
+    background-color: #c7c3c3;
+    grid-column: 2/3;
+    grid-row: 1/6;
+    height: 100%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid rgb(206, 0, 58);
+    gap: 0px;
+    flex-direction: row;
+}
+
+.box {
+    width: 150px;
+    height: 90px;
+    padding: 10px;
+    border: 2px solid rgba(21, 110, 11, 0.438);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: white;
+}
+
+#BOX1 {
+    background-color: pink;
+}
+
+#BOX2 {
+    background-color: rgb(207, 78, 99);
+}
+
+#BOX3 {
+    background-color: rgb(196, 35, 174);
+}
+
+

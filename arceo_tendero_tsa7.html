@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="simulator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="simulator">
+            <div class="reset-all">
+                <button id="reset" onclick="reset()">Reset Flexbox</button>
+            </div>
+            <div class="gap">
+                <h2>Gap</h2><br>
+                <button id="gap-" onclick="gap(2)">-</button>
+                <input type="number" id="gapcount" value="0" min="0" disabled>
+                <button id="gap+" onclick="gap(1)">+</button>
+            </div>
+            <h2>Flex Direction</h2>
+            <div class="flex-direction">
+                <button id="row" onclick="direction(1)">Row</button>
+                <button id="column" onclick="direction(2)">Column</button>
+            </div>
+
+            <div class="justify-content">
+                <h2>Justify Content</h2>
+                <div class="jusbuttons">
+                    <button id="start" onclick="justify(1)">Start</button>
+                    <button id="center" onclick="justify(2)">Center</button>
+                    <button id="end" onclick="justify(3)">End</button>
+                    <button id="spacebetween" onclick="justify(4)">Space Between</button>
+                    <button id="spacearound" onclick="justify(5)">Space Around</button>
+                    <button id="spaceevenly" onclick="justify(6)">Space Evenly</button>
+                </div>
+            </div>
+            <h2>Align Items</h2>
+            <div class="align-items">
+
+                <button id="alstart" onclick="align('start')">Start</button>
+                <button id="alcenter" onclick="align('center')">Center</button>
+                <button id="alend" onclick="align('end')">End</button>
+            </div>
+
+            <div class="flex-grow">
+                <h2>Flex Grow</h2>
+                <button id="growreset" onclick="growreset()">Reset</button>
+                <button id="growall" onclick="growall()">Grow All</button>
+            </div>
+            <div class="boxes">
+                <button id="box1" onclick="grow(1)">Box 1 +</button>
+                <input type="number " id="bx1" value="0" disabled>
+                <button id="box2" onclick="grow(2)" >Box 2 +</button>
+                <input type="number" id="bx2" value="0" disabled>
+                <button id="box3" onclick="grow(3) ">Box 3 +</button>
+                <input type="number" id="bx3" value="0" disabled >
+            </div>
+        </div>
+    <div id="demo">
+        <div class="box" id="BOX1">1</div>
+        <div class="box" id="BOX2">2</div>
+        <div class="box" id="BOX3">3</div>
+    </div>
+    </div>
+    <script src="simulator.js"></script>
+
+</body>
+
+</html>
