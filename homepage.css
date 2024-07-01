@@ -448,6 +448,24 @@ nav .container {
 /* For mobile devices */
 @media (max-width: 650px) {
 
+    nav .container{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .logo {
+        width: 100px;
+        img {
+            width: 50px;
+        }
+    }
+
+    .nav-list {
+        padding: 0px;
+
+        a {
+            font-size: 0.9rem;
+        }
+    }
     .nav-item{
         margin-right: 8px;
     }
