@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    transition: 0.5s all ease;
+}
+
+body{
+    padding: 0px 0px 50px 0px;
+    background-color: #000000;
+    background-color: #1a1a1a;
+    color: #d4d1d1;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+nav {
+    height: fit-content;
+    background-color: #4B2D2D;
+    color: white;
+    margin-bottom: 10px;
+}
+
+nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    align-items: center;
+
+    h1 {
+        padding-left: 20px;
+    }
+
+    img {
+        /* border: 2px solid white; */
+        padding: 2px;
+        width: 90px;
+        object-fit: cover;
+        object-position: left;
+    }
+    cursor: pointer;
+   
+}
+
+.nav-list {
+    display: flex;
+    padding: 20px;
+}
+
+.nav-item {
+    list-style: none;
+    padding: 10px 20px;
+    font-size: larger;
+
+}
+
+.nav-links {
+    color: rgb(209, 198, 198);
+    text-decoration: none;
+    /*to remove underline */
+    font-size: 1.5rem;
+}
+
+.nav-links:hover {
+    color: white;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.active {
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.chap-container {
+    color: #22201F;
+
+    .intro {
+        background-color: rgba(238, 238, 237, 0.4);
+        padding: 20px;
+        border-radius: 10px;
+
+        h1 {
+            font-size: 5rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            padding: 15px;
+        }
+    }
+
+    .storyarcs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .arc {
+            margin: 20px;
+            padding: 20px 50px 50px 50px;
+            background-color: rgb(75,45,45, 0.9);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-self: center;
+            align-content: center;
+            width: 100%;
+            color: #ff6347;
+            border-radius: 20px;
+
+            h1 {
+                color: #ff6347;
+                font-size: 3rem;
+                display: flex;
+                align-self: center;
+            }
+
+            .sub-arc-container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .manga-anime {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    gap: 10px;
+                    padding: 10px 20px 20px 20px;
+                }
+
+                h2 {
+                    color: #ff6347;
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                }
+
+                .overflow {
+                    padding-left: 13px;
+                    max-height: 230px;
+                    overflow: auto;
+                }
+
+                .manga-chap,
+                .anime-ep {
+                    margin-top: 5px;
+                    height: 310px;
+                    width: 300px;
+                    background-color: antiquewhite;
+                    border-radius: 15px;
+                    padding: 10px 10px 10px 10px;
+                    font-weight: 355;
+                }
+
+            }
+            
+
+            .manga-chap h3,
+            .anime-ep h3 {
+                color: #ff6347;
+                font-size: 2rem;
+                font-weight: 400;
+                display: flex;
+                justify-self: center;
+                align-self: left;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                color: #232222;
+            }
+
+            li {
+                margin: 10px 0;
+            }
+
+
+            
+
+        }
+
+    }
+}
+
+.break-line {
+    border-bottom: 1px solid #EEEEED;
+    width: 100%;
+    height: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1200px){
+    .logo{
+        h1{
+            display: none;
+        }
+    }
+}

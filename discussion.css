@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    transition: 0.5s all ease;
+}
+
+body {
+    padding: 0px 0px 50px 0px;
+    background-image: url(./imgs/board.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.full-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px;
+    padding: 30px;
+    /* background-color: #f9f9f9; */
+}
+
+.advisory-section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(75, 45, 45, 0.9);
+    color: white;
+    border-radius: 20px;
+    width: 30rem;
+    padding: 20px;
+    height:840px;
+
+    h2 {
+        font-size: 3em;
+    }
+
+    .greeting {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 10px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .online-dis {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* Center items vertically */
+        background-color: rgb(75, 45, 45, 0.9);
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .members,
+    .online,
+    .Discussions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Center items vertically within each section */
+        text-align: center;
+    }
+
+    .online-bar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    p {
+        margin: 5px 0 0;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .rules {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .dropbtn {
+            background-color: rgb(75, 45, 45, 0.9);
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            color: rgb(75, 45, 41, 0.9);
+            min-width: 100%;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #827a7a;
+            color: white;
+        }
+    }
+}
+
+.posts-section {
+    display: flex;
+    flex-direction: column;
+    width: 60rem;
+    background-color: rgb(75, 45, 45, 0.02);
+    border-radius: 20px;
+    padding: 20px;
+
+    .post {
+        width: 95%;
+        margin: auto;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: #f9f9f9;
+
+        h2 {
+            margin: 0;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .author {
+            font-size: 0.8em;
+            color: #888;
+        }
+
+        img{
+            width:100%;
+        }
+    }
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search input{
+    height:36px;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+
+  img{
+    width: 80%;
+    padding: 2px;
+  }
+}
+
+/*Resize the wrap to see the search bar change!*/
+posts-section .wrap{
+  width: 30%;
+  display: flex;
+  align-content: start;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
